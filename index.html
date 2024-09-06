@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Yura's Habit Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Habits</h2>
+        <h3>----------------------</h3>
+        <form class="addHabit">
+            <input class="habitInput" type="text" name="habit" placeholder="Enter Habit Name" required/>
+            <input class="repetititonsInput" type="number" name="repetitions" placeholder="Number of Repetitions" required/>
+        </form>
+        <div class="freq">
+            <label for="timeframe"> How frequent: </label>
+            <select name="timeframe" id="timeframe">
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+        </div>
+       <input type="submit" value="Add Habit" />
+
+
+       <ul class="habits">
+        <li>No habits</li>
+       </ul>
+    </div>
+    
+    <script src="/src/app.js"></script>
+</body>
+</html>

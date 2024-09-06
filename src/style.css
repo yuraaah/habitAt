@@ -1,0 +1,44 @@
+html {
+    margin: 0;
+    height: 99%;
+}
+
+body {
+    margin: 5px;
+    height: 99%;
+    min-height: 99%;
+    border: 2px gold solid;
+}
+
+.container {
+    min-height: 500px;
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.container>h2 {
+    font-weight: bold;
+    font-family: Verdana;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.container>h3 {
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+}
+
+
+.habitInput, .repetititonsInput {
+    min-height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.habitInput:hover, .repetititonsInput:hover {
+    border: 1px solid gold;
+}
